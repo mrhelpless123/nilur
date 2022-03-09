@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="../logo-quadrat.svg">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/formats.css">
+
+     <title>Kontakt | nilur</title>
+
+  </head>
+  <body>
+    <!--nav for desktop-->
+    <nav id="menu" class="d-none d-sm-block d-flex flex-wrap d-print-none">
+      <ul class="nav nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html"><img class="pos-logo" src="../logo-lang.svg" alt="Startseite"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projekte.html">Projekte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lebenslauf.html">Lebenslauf</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profil.html">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+      </nav>
+      
+        <!--nav for mobile-->
+        <nav id="menu" class="d-block d-sm-none d-print-none">
+        <div class="row">
+          <div class="col-2 pt-3 pb-3 ps-4"><a href="../index.html"><img src="../logo-quadrat.svg" alt="Startseite"></a></div>
+          <div class="col-1"></div>
+          <div class="col-4 pt-1 pb-1"><a class="nav-link" href="projekte.html">Projekte</a><a class="nav-link" href="lebenslauf.html">Lebenslauf</a></div>
+          <div class="col-4 pt-1 pb-1"><a class="nav-link" href="profil.html">Profil</a><a class="nav-link" href="kontakt.html">Kontakt</a></div>
+        </div>
+        </nav>
+    
+<div id="content" class="container py-3">
+
+  <p>Bei Anliegen können Sie sich gerne über das Kontaktformular oder per E-Mail an mich richten.<br>Um mehr von laufenden Projekten und meinen Hobbies zu erfahren, stehen meine Profile auf Instagram und LinkedIn zur Verfügung.</p>
+<form class="pb-5" action="https://formsubmit.co/nikoluttner@gmail.com" method="POST">
+  <input type="hidden" class="form-control"name="_captcha" value="true">
+  <input type="text" class="form-control" placeholder="Name" required autofocus><br>
+  <input type="email" class="form-control" name="email" placeholder="E-Mail" required><br>
+  <textarea name="message" class="form-control" placeholder="Anliegen" required></textarea><br>
+  <button type="submit" class="btn-form" >Absenden</button>
+</form>
+<a href="https://linkedin.com" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="../icons/linkedin.svg" class="btn-icon" alt="LinkedIn"></button></a>
+<a href="https://instagram.com/nikoluttner" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="../icons/instagram.svg" class="btn-icon" alt="Instagram"></button></a>
+<a href="mailto:nikoluttner@gmail.com" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="../icons/envelope.svg" class="btn-icon" alt="E-Mail"></button></a>
+
+
+</div>
+
+<footer class="py-3 d-print-none">
+  <div class="nav justify-content-center pb-3">
+    <h5 class="footh5"><a href="impressum.html" class="footh5 pe-6">Impressum</a> | <a href="datenschutz.html" class="footh5">Datenschutz</a></h5>
+      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace">  | </div><br class="d-block d-sm-none"></h5>
+      <h5 class="footh5"><a href="#menu" class="footh5">Seitenanfang</a> | <a href="../en/index.html" class="footh5">English Version</a> | <a href="#" onclick="window.print();" class="footh5">Seite drucken</a></h5>
+
+  </div>
+    <p id="copyright" class="text-center"> Nikolas Luttner<br>Alle Rechte vorbehalten.</p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

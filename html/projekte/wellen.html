@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="../../logo-quadrat.svg">
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/formats.css">
+
+     <title>Wellenbüros | nilur</title>
+
+  </head>
+  <body>
+    <!--nav for desktop-->
+    <nav id="menu" class="d-none d-sm-block d-flex flex-wrap d-print-none">
+      <ul class="nav nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html"><img class="pos-logo" src="../../logo-lang.svg" alt="Startseite"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../projekte.html">Projekte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../lebenslauf.html">Lebenslauf</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../profil.html">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+      </nav>
+      
+        <!--nav for mobile-->
+        <nav id="menu" class="d-block d-sm-none d-print-none">
+        <div class="row">
+          <div class="col-2 pt-3 pb-3 ps-4"><a href="../../index.html"><img src="../../logo-quadrat.svg" alt="Startseite"></a></div>
+          <div class="col-1"></div>
+          <div class="col-4 pt-1 pb-1"><a class="nav-link" href="../projekte.html">Projekte</a><a class="nav-link" href="../lebenslauf.html">Lebenslauf</a></div>
+          <div class="col-4 pt-1 pb-1"><a class="nav-link" href="../profil.html">Profil</a><a class="nav-link" href="../kontakt.html">Kontakt</a></div>
+        </div>
+        </nav>
+    
+<div id="content" class="container py-3">
+
+  <div class="row g-0">
+    <div class="col-12 col-sm-6">
+      <img class="img-fluid proj-img zoom" onclick="bodyOverflowHidden();openModal();currentSlide(1)" src="wellen/pic1.jpg" alt="">
+    </div>
+    <div class="col-12 col-sm-6 proj-descr">
+      <h2>Wellenbüros</h2>
+      <p>Geformt wird das Gebäude von der Welle. Sie unterteilt die Länge des Gebäudes in einzelne Bereiche, die durch die veschiedenen Amplituden in der Raumlänge und Raumhöhe variieren. Dementsprechend können den Bereichen unterschiedliche Nutzungen zugeteilt werden. Im Westen ist der Raum sehr geöffnet und im Osten eher privat.
+        <br>Diese langen stützenlosen aufgespannten Räume werden über Zugbänder in den Bodenplatten ausgeglichen und das westliche offene Ende wird dann durch Stützen in die Höhe gestemmt. Das Gebäude gibt den verbauten Raum auch direkt an die Öffentlichkeit zurück durch eine begehbare Dachlandschaft, auf der man im Sommer picknicken kann und im Winter mit dem Schlitten fahren kann.
+        <br>Die Wellen sind ganz im Sinne der Marke des Auftraggebers Ecoalf geplant. Ecoalf entwickelt Klamotten, die hautpsächlich aus recyceltem Müll der Meereswellen bestehen. Durch die enorme Größe des Gebäudes, kann es leicht auch für andere Zwecke verwendet werden. Beispielsweise können die drei Wellen auch unabhängig voneinander für verschiedene Zwecke oder Firmen genutzt werden.</p>
+    </div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-12 col-sm-6 proj-descr">
+      <a href="../projekte.html#buero"><button class="btn-gallery pb">Bürogebäude</button></a>
+      <a href="../projekte.html#buero"><button class="btn-gallery">Gastronomie</button></a>
+      <p class="pt-3">Jahr: 2020<br>Partner: Ageliki Mitrenas, Fritz Langner<br>Ort: Regensburg, Innenstadt<br>Fach: Konstruieren 5<br>Fläche: 10 m²<br>Dozent: Prof. Reichwald</p>
+    </div>
+    <div class="col-12 col-sm-6">
+      <img class="img-fluid proj-img" onclick="bodyOverflowHidden();openModal();currentSlide(2)" src="wellen/pic1.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-12 col-sm-6">
+      <img class="img-fluid proj-img" src="wellen/pic1.jpg" alt="">
+    </div>
+    <div class="col-12 col-sm-6 proj-video">
+      <div class="video-title row">Stimmungsvideo und Musik</div>
+      <video src="../../video/210516-Präsentationsvideo.mp4" controls controlsList="nodownload">Dieser Browser unterstützt dieses Videoformat nicht.</video>
+    </div>
+  </div>
+
+  <div id="myModal" class="proj-modal">
+    <div onclick="closeModal();bodyOverflowAuto()" class="close"></div>
+    <div class="modal-content">
+      <div class="mySlides">
+        <img src="../../images/wellen1.jpg" class="zoom" alt="">
+      </div>
+      <div class="mySlides">
+        <img src="../../images/turm2.png" class="zoom" alt="">
+      </div>
+      <div class="mySlides">
+        <img src="../../images/Verticity.png" class="zoom" alt="">
+      </div>
+      <div class="mySlides">
+        <img src="../../images/Logo RK.jpg" alt="">
+      </div>
+      <div class="mySlides">
+        <img src="img4_wide.jpg" alt="">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+  </div>
+
+</div>
+
+<footer class="py-3 d-print-none">
+  <div class="nav justify-content-center pb-3">
+    <h5 class="footh5"><a href="../impressum.html" class="footh5 pe-6">Impressum</a> | <a href="../datenschutz.html" class="footh5">Datenschutz</a></h5>
+      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace">  | </div><br class="d-block d-sm-none"></h5>
+      <h5 class="footh5"><a href="#menu" class="footh5">Seitenanfang</a> | <a href="../../en/index.html" class="footh5">English Version</a> | <a href="#" onclick="window.print();" class="footh5">Seite drucken</a></h5>
+
+  </div>
+    <p id="copyright" class="text-center"> Nikolas Luttner<br>Alle Rechte vorbehalten.</p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/wheelzoom.js"></script>
+	<script>wheelzoom(document.querySelector('img.zoom'));</script>
+</body>
+</html>
