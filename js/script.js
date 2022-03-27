@@ -15,7 +15,6 @@ window.onload = () => {
     });
 };
 
-
 //gallery filter
 filterSelection("all")
 function filterSelection(c) {
@@ -49,8 +48,15 @@ function RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
+function activeButton(elem) {
+  var button = document.getElementsByTagName('button');
+  for (i = 0; i < button.length; i++) {
+      button[i].classList.remove('active')
+  }
+  elem.classList.add('active');
+}
+
+/*var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn-gallery");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
@@ -60,51 +66,102 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-//modal lightbox
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
+irrelevant dank neuer function*/
+
+function removeAll() {
+  var element = document.getElementById("all");
+  element.classList.remove("active");
 }
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+function filterbuero() {
+  var element = document.getElementById("bn-buero");
+  element.classList.add("active");
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function filtermuseum() {
+  var element = document.getElementById("bn-museum");
+  element.classList.add("active");
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function filterhaus() {
+  var element = document.getElementById("bn-haus");
+  element.classList.add("active");
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+if (window.location.href.indexOf("buero") > -1) {
+  filterSelection("buero");
+  filterbuero();
+  removeAll();
 }
 
-// disable scroll for lightbox
+if (window.location.href.indexOf("museum") > -1) {
+  filterSelection("museum");
+  filtermuseum();
+  removeAll();
+}
+
+if (window.location.href.indexOf("haus") > -1) {
+  filterSelection("haus");
+  filterhaus();
+  removeAll();
+}
+
+/*// disable scroll for lightbox
 function bodyOverflowHidden() {
   document.getElementsByTagName("html")[0].style.overflow = "hidden";
 }
 
 function bodyOverflowAuto() {
   document.getElementsByTagName("html")[0].style.overflow = "auto";
+}*/
+
+//pinch and zoom image
+
+const pinchZoom = (imageElement) => {
+  let imageElementScale = 1;
+
+  let start = {};
+
+  const distance = (event) => {
+    return Math.hypot(event.touches[0].pageX - event.touches[1].pageX, event.touches[0].pageY - event.touches[1].pageY);
+  };
+
+  imageElement.addEventListener('touchstart', (event) => {
+    if (event.touches.length === 2) {
+      event.preventDefault();
+
+      start.x = (event.touches[0].pageX + event.touches[1].pageX) / 2;
+      start.y = (event.touches[0].pageY + event.touches[1].pageY) / 2;
+      start.distance = distance(event);
+    }
+  });
+
+  imageElement.addEventListener('touchmove', (event) => {
+    if (event.touches.length === 2) {
+      event.preventDefault();
+
+      let scale;
+      if (event.scale) {
+        scale = event.scale;
+      } else {
+        const deltaDistance = distance(event);
+        scale = deltaDistance / start.distance;
+      }
+      imageElementScale = Math.min(Math.max(1, scale), 4);
+
+      const deltaX = (((event.touches[0].pageX + event.touches[1].pageX) / 2) - start.x) * 2;
+      const deltaY = (((event.touches[0].pageY + event.touches[1].pageY) / 2) - start.y) * 2;
+
+      const transform = `translate3d(${deltaX}px, ${deltaY}px, 0) scale(${imageElementScale})`;
+      imageElement.style.transform = transform;
+      imageElement.style.WebkitTransform = transform;
+      imageElement.style.zIndex = "9999";
+    }
+  });
+
+  imageElement.addEventListener('touchend', (event) => {
+    imageElement.style.transform = "";
+    imageElement.style.WebkitTransform = "";
+    imageElement.style.zIndex = "";
+  });
 }
