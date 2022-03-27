@@ -15,8 +15,8 @@
     <!--nav for desktop-->
     <nav id="menu" class="d-none d-sm-block d-flex flex-wrap d-print-none">
       <ul class="nav nav-fill">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html"><img class="pos-logo" src="../logo-lang.svg" alt="Startseite"></a>
+        <li class="nav-item" onmouseover="document.desklogo.src='../logo-lang-inversed.svg'" onmouseout="document.desklogo.src='../logo-lang.svg'">
+          <a class="nav-link" href="../index.html"><img class="pos-logo" src="../logo-lang.svg" alt="Startseite" name="desklogo"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="projekte.html">Projekte</a>
@@ -43,12 +43,16 @@
         </div>
         </nav>
     
-<div id="content" class="container py-3 d-print-none">
+<div id="content-noshdw" class="container d-print-none my-3">
   <div id="myBtnContainer">
-    <button class="btn-gallery active" onclick="filterSelection('all')">Alle Projekte</button>
-    <button class="btn-gallery" onclick="filterSelection('buero');location.href='#buero'">Büro</button>
-    <button class="btn-gallery" onclick="filterSelection('haus');location.href='#haus'">Haus</button>
-    <button class="btn-gallery" onclick="filterSelection('museum');location.href='#museum'">Museum</button>
+    <button class="btn-gallery active" id="all" onclick="filterSelection('all');location.href='#alle';activeButton(this)">Alle Projekte</button>
+    <button class="btn-gallery"  id="bn-buero" onclick="filterSelection('buero');location.href='#buero';activeButton(this)">Büro</button>
+    <button class="btn-gallery" id="bn-haus" onclick="filterSelection('haus');location.href='#haus';activeButton(this)">Haus</button>
+    <button class="btn-gallery" id="bn-museum" onclick="filterSelection('museum');location.href='#museum';activeButton(this)">Museum</button>
+    <button class="btn-gallery" id="bn-gastronomie" onclick="filterSelection('gastronomie');location.href='#gastronomie';activeButton(this)">Gastronomie</button>
+    <button class="btn-gallery" id="bn-kultur" onclick="filterSelection('kultur');location.href='#kultur';activeButton(this)">Kultur</button>
+
+
   </div>
 
 <div class="gallery-row pt-3">
@@ -70,7 +74,7 @@
       <div class="gallery-title">Donauatelier | Regensburg</div>
     </div>
   </div>
-  <div class="gallery-column museum">
+  <div class="gallery-column museum buero">
     <div class="gallery-image">
       <a href="../html/projekte/akutone.html"><img src="../images/akutone-title.png" alt="akutone Berlin"></a>
       <div class="gallery-title">akutone | Berlin</div>
@@ -94,7 +98,7 @@
 <footer class="py-3 d-print-none">
   <div class="nav justify-content-center pb-3">
     <h5 class="footh5"><a href="impressum.html" class="footh5 pe-6">Impressum</a> | <a href="datenschutz.html" class="footh5">Datenschutz</a></h5>
-      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace">  | </div><br class="d-block d-sm-none"></h5>
+      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace"> | </div><br class="d-block d-sm-none"></h5>
       <h5 class="footh5"><a href="#menu" class="footh5">Seitenanfang</a> | <a href="../en/index.html" class="footh5">English Version</a> | <a href="#" onclick="window.print();" class="footh5">Seite drucken</a></h5>
 
   </div>

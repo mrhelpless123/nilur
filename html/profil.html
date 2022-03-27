@@ -7,6 +7,8 @@
 	  <link rel="icon" href="../logo-quadrat.svg">
 	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/formats.css">
+    <link rel="stylesheet" href="../css/simple-lightbox.min.css">
+
 
      <title>Profil | nilur</title>
 
@@ -15,8 +17,8 @@
     <!--nav for desktop-->
     <nav id="menu" class="d-none d-sm-block d-flex flex-wrap d-print-none">
       <ul class="nav nav-fill">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html"><img class="pos-logo" src="../logo-lang.svg" alt="Startseite"></a>
+        <li class="nav-item" onmouseover="document.desklogo.src='../logo-lang-inversed.svg'" onmouseout="document.desklogo.src='../logo-lang.svg'">
+          <a class="nav-link" href="../index.html"><img class="pos-logo" src="../logo-lang.svg" alt="Startseite" name="desklogo"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="projekte.html">Projekte</a>
@@ -43,79 +45,95 @@
         </div>
         </nav>
     
-<div id="content" class="container py-3">
+<div id="content" class="container my-sm-3 p-0">
 
   <div class="row g-0">
-    <div class="col-12 col-sm-6 prof-descr">
-      <h2>nilur</h2>
+    <div class="col-12 col-sm-6 box-text bgc-2">
+      <div>
+        <h3>nilur</h3>
       <p>nilur steht für Nikolas Luttner Regensburg. Das Ideenprinzip basiert auf kontextualem aber nicht unbedingt rationalen 
-        <br>Hier steht etwas über meine Ideen, Grundlagen und Merkmale.</p>
+        <br><br>Hier steht etwas über meine Ideen, Grundlagen und Merkmale. Es ist eine Ansammlung an Projekten. Diese Platform dient zur Präsentation verschiedener Projekte.
+      </p>
+      </div>
     </div>
     <div class="col-12 col-sm-6">
-      <img class="img-fluid m-5" src="../logo-quadrat.svg" alt="">
+      <img class="img-fluid" src="../images/logo-skizze.png" alt="">
     </div>
   </div>
 
-  <div class="accordion accordion-flush pt-3" id="profil-acco">
+  <div class="accordion accordion-flush" id="profil-acco">
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-heading1">
-        <button class="accordion-button collapsed ab1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
-          Verticity
+        <button class="accordion-button collapsed abu1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+          <span class="acc-line">-----</span> Zufall in der Architektur <span class="acc-line">-----</span>
         </button>
       </h2>
       <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#profil-acco">
-        <div class="accordion-body">Als Beitrag für den "redesign the world" Wettbewerb von die Idee der Verticity entwickelt</div>
+        <div class="accordion-body abo1">Das Thema des Zufalls in der Architektur entwickelte sich als Thema der Bachelorarbeit und stellt den letzten Stand eines geplanten Lebenswerkes dar. Dass Zufall hierbei und auch im alltäglichen Leben eine Rolle spielt, sollte uns allen sehr bewusst sein. Diese Arbeit schafft einen Überblick über dieses Thema und soll dazu anregen, Architektur von einer anderen Perspektive zu betrachten.
+          <br><br>Dabei liegt der Fokus auf Zufall im Entwurf, in der Planung und in der Ästhetik. Vor allem organische und dekonstruktive Architektur besitzen einen Zufallscharakter, da sie beliebig erscheinen können. Teilweise wird diese auch durch zufällige Methoden entworfen, aber dieser Zufall verschwindet meist über die Entwurfsentwicklung hinweg durch Abstraktionen, Modellstudien und Anpassung an den Kontext. Trotzdem ist zufällig scheinende Architektur ansprechender als bewusst und absichtlich geplante Gebäude, da sie mehr Anpassung, Vielfältigkeit und Individualismus erlaubt. Darüber hinaus kann somit ein Gebäude auch zu einem Kunstwerk werden und erfüllt somit nicht nur die Aufgabe der Raumschaffung, sondern bereichert eine Umgebung auch ästhetisch.
+          <br><br><a class="pro-link" href="../doc/Bachelorthesis.pdf" target="blank_">&#10132; Zum Dokument</a>
+        </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-heading2">
-        <button class="accordion-button collapsed ab2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
-          Coronateststation Kreuz
+        <button class="accordion-button collapsed abu2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+          <span class="acc-line">-----</span> Coronateststation Kreuz <span class="acc-line">-----</span>
         </button>
       </h2>
       <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#profil-acco">
-        <div class="accordion-body">Dies wurde</div>
+        <div class="accordion-body abo2">Ist es vielleicht (sicher) gar nicht wert zu überarbeiten außer es ist super easy und du hast bock drauf, aber kannst du auch mal nach webwsiteveröffentlichung machen</div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-heading3">
-        <button class="accordion-button collapsed ab3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
-          Zufälliges Container Museum
+        <button class="accordion-button collapsed abu1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+          <span class="acc-line">-----</span> Zufälliges Container Museum <span class="acc-line">-----</span>
         </button>
       </h2>
       <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#profil-acco">
-        <div class="accordion-body">Um dem Zufall in der Architektur mehr auf den Grund zu gehen</div>
+        <div class="accordion-body abo1">Um dem Zufall in der Architektur mehr auf den Grund zu gehen
+          <div class="lightbox">
+          <br><a class="pro-link" href="../images/zufallsmuseum.png">&#10132; Zur Galerie</a>
+          <a class="d-none" href="../images/Verticity.png"></a>
+          </div>
+
+        </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-heading4">
-        <button class="accordion-button collapsed ab4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
-          SV Motzing Website
+        <button class="accordion-button collapsed abu2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+          <span class="acc-line">-----</span> SV Motzing Website <span class="acc-line">-----</span>
         </button>
       </h2>
       <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#profil-acco">
-        <div class="accordion-body">Zusammen mit Richard Kammermeier wurde diese bestehende Website neu aufgesetzt</div>
+        <div class="accordion-body abo2">Zusammen mit Richard Kammermeier wurde diese bestehende Website neu aufgesetzt
+          <br><br><a class="pro-link" href="https://www.sv-motzing.de/" target="blank_">&#10132; Zur Website</a>
+        </div>
       </div>
     </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading5">
-      <button class="accordion-button collapsed ab5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
-        Physical Distance Game
+      <button class="accordion-button collapsed abu1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+        <span class="acc-line">-----</span> Physical Distance Game <span class="acc-line">-----</span>
       </button>
     </h2>
     <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#profil-acco">
-      <div class="accordion-body">Dieses Spiel wurde im Frühjahr 2020 entwickelt, als der Coronavirus begann das alltägliche Leben zu verändern</div>
+      <div class="accordion-body abo1">Dieses Spiel wurde im Frühjahr 2020 im Rahmen des Corona Design Labs entwickelt, als der Coronavirus begann das alltägliche Leben zu verändern
+        <br><br><a class="pro-link" href="../doc/Bachelorthesis.pdf" target="blank_">&#10132; Zur Anleitung</a>
+      </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-heading6">
-      <button class="accordion-button collapsed ab6" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
-        Zufall in der Architektur
+      <button class="accordion-button collapsed abu2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+        <span class="acc-line">-----</span> Verticity <span class="acc-line">-----</span>
       </button>
     </h2>
     <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#profil-acco">
-      <div class="accordion-body">Meine Bachelorarbeit und mein bisheriges Lebenswerk befasst sich mit Zufall in der Architektur</div>
-        <iframe src="../video/Bachelorthesis.pdf" frameborder="0"></iframe>
+      <div class="accordion-body abo2">Dies wurde als Wettbewerdsbeitrag für "redesign the world"
+      </div>
       </div>
     </div>
   </div>
@@ -127,7 +145,7 @@
 <footer class="py-3 d-print-none">
   <div class="nav justify-content-center pb-3">
     <h5 class="footh5"><a href="impressum.html" class="footh5 pe-6">Impressum</a> | <a href="datenschutz.html" class="footh5">Datenschutz</a></h5>
-      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace">  | </div><br class="d-block d-sm-none"></h5>
+      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace"> | </div><br class="d-block d-sm-none"></h5>
       <h5 class="footh5"><a href="#menu" class="footh5">Seitenanfang</a> | <a href="../en/index.html" class="footh5">English Version</a> | <a href="#" onclick="window.print();" class="footh5">Seite drucken</a></h5>
       
   </div>
@@ -136,5 +154,14 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="../js/script.js"></script>
+  <script src="../js/simple-lightbox.min.js"></script>
+  <script>
+   (function() {
+       var $gallery = new SimpleLightbox('.lightbox a', {
+         close: false, showCounter: false, heightRatio: 1.1, widthRatio: 0.9
+       });
+   })();
+</script>
+
 </body>
 </html>

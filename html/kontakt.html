@@ -15,8 +15,8 @@
     <!--nav for desktop-->
     <nav id="menu" class="d-none d-sm-block d-flex flex-wrap d-print-none">
       <ul class="nav nav-fill">
-        <li class="nav-item">
-          <a class="nav-link" href="../index.html"><img class="pos-logo" src="../logo-lang.svg" alt="Startseite"></a>
+        <li class="nav-item" onmouseover="document.desklogo.src='../logo-lang-inversed.svg'" onmouseout="document.desklogo.src='../logo-lang.svg'">
+          <a class="nav-link" href="../index.html"><img class="pos-logo" src="../logo-lang.svg" alt="Startseite" name="desklogo"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="projekte.html">Projekte</a>
@@ -43,27 +43,46 @@
         </div>
         </nav>
     
-<div id="content" class="container py-3">
+<div id="content" class="container my-sm-3 p-0">
 
-  <p>Bei Anliegen können Sie sich gerne über das Kontaktformular oder per E-Mail an mich richten.<br>Um mehr von laufenden Projekten und meinen Hobbies zu erfahren, stehen meine Profile auf Instagram und LinkedIn zur Verfügung.</p>
-<form class="pb-5" action="https://formsubmit.co/nikoluttner@gmail.com" method="POST">
-  <input type="hidden" class="form-control"name="_captcha" value="true">
-  <input type="text" class="form-control" placeholder="Name" required autofocus><br>
-  <input type="email" class="form-control" name="email" placeholder="E-Mail" required><br>
-  <textarea name="message" class="form-control" placeholder="Anliegen" required></textarea><br>
-  <button type="submit" class="btn-form" >Absenden</button>
-</form>
-<a href="https://linkedin.com" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="../icons/linkedin.svg" class="btn-icon" alt="LinkedIn"></button></a>
-<a href="https://instagram.com/nikoluttner" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="../icons/instagram.svg" class="btn-icon" alt="Instagram"></button></a>
-<a href="mailto:nikoluttner@gmail.com" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="../icons/envelope.svg" class="btn-icon" alt="E-Mail"></button></a>
+  <div class="row g-0">
+    <div class="col-12 col-sm-6 box-form bgc-2">
+      <div class="box-content">
+      <form class="w-100" action="https://formsubmit.co/nikoluttner@gmail.com" method="POST">
+        <input type="text" class="form-control" name="name" placeholder="Name" required autofocus><br>
+        <input type="email" class="form-control" name="email" placeholder="E-Mail" required><br>
+        <input type="hidden" name="_next" value="https://nilur.de/kontakt.html">
+        <input type="hidden" name="_captcha" value="false">
+        <textarea name="message" class="form-control" placeholder="Anliegen" required></textarea><br>
+        <button type="submit" class="btn-form" >Absenden</button>
+      </form>
+      </div>
+      
+    </div>
+    <div class="col-12 col-sm-6 box-text bgc-1">
+      <p class="pt-1 pb-1">Bei Anliegen können Sie sich gerne über das Kontaktformular oder per E-Mail an mich richten.
+        <br><br>Um mehr von laufenden Projekten und meinen Hobbies zu erfahren, stehen meine Profile auf Instagram und LinkedIn zur Verfügung.<br><br>Sie können mich auch per E-Mail kontaktieren.
+        <br><br><a class="pro-link" href="mailto:nikoluttner@gmail.com">&#10132; E-Mail versenden</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-0">
+    <div class="col-12 col-sm-6 box-form bgc-1">
+      <iframe class="box-content iframe-cont" src="https://www.instagram.com/p/CUPZ132oOxP/embed" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    </div>
+    <div class="col-12 col-sm-6 box-form bgc-2">
+      <iframe class="box-content iframe-cont" src="https://www.linkedin.com/embed/feed/update/urn:li:share:6907358218822242304" frameborder="0" scrolling="no" allowfullscreen="" title="Eingebetteter Beitrag"></iframe>
+    </div>
+  </div>
 
 
-</div>
+  </div>
 
 <footer class="py-3 d-print-none">
   <div class="nav justify-content-center pb-3">
     <h5 class="footh5"><a href="impressum.html" class="footh5 pe-6">Impressum</a> | <a href="datenschutz.html" class="footh5">Datenschutz</a></h5>
-      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace">  | </div><br class="d-block d-sm-none"></h5>
+      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace"> | </div><br class="d-block d-sm-none"></h5>
       <h5 class="footh5"><a href="#menu" class="footh5">Seitenanfang</a> | <a href="../en/index.html" class="footh5">English Version</a> | <a href="#" onclick="window.print();" class="footh5">Seite drucken</a></h5>
 
   </div>
