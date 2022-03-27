@@ -15,8 +15,8 @@
     <!--nav for desktop-->
     <nav id="menu" class="d-none d-sm-block d-flex flex-wrap d-print-none">
       <ul class="nav nav-fill">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><img class="pos-logo" src="logo-lang.svg" alt="Startseite"></a>
+        <li class="nav-item" onmouseover="document.desklogo.src='logo-lang-inversed.svg'" onmouseout="document.desklogo.src='logo-lang.svg'">
+          <a class="nav-link" href="index.html"><img class="pos-logo" src="logo-lang.svg" alt="Startseite" name="desklogo"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="html/projekte.html">Projekte</a>
@@ -43,9 +43,9 @@
         </div>
         </nav>
     
-<div id="content" class="container pt-3">
+<div id="content-noshdw" class="container mt-3">
 
-		<div id="start-gallery" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<div id="start-gallery" class="carousel slide" data-bs-ride="carousel">
 
   <div class="carousel-inner">
     <div class="carousel-item active" id="wellen">
@@ -82,74 +82,47 @@
 </div>
 
       <a href="html/lebenslauf.html" class="indexlink"><div class="row mt-3">
-          <div class="col-2">
+          <div class="col-md-2 col-sm-3 col-4 indeximg">
             <img class="img-fluid" src="images/nikolasluttner.png" alt="Portrait Nikolas Luttner">
           </div>
-          <div class="col-10">
-            Seit dem Wintersemester 2018/19 studiert Nikolas an der OTH Regensburg. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe accusamus non expedita repellendus officiis maiores aliquam impedit nulla temporibus! Beatae officia eius blanditiis aliquam soluta laboriosam corrupti hic repudiandae tempora.
+          <div class="col-md-10 col-sm-9 col-8">
+            In der Kindheit entwickelte ich ein richtiges Interesse für Architektur dank spielender Medien wie Legobausteine, die Städtebausimulatoren Anno und
+            <br><br>Nach dem abgeschlossenen Masterstudium will ich in einem lokalem Architekturbüro meine Arbeit beginnen und der deutschen Architektenkammer danach beitreten und dann schauen wohin mich das Schicksal zieht      
           </div>
       </div></a>
 
       <div class="hline"></div>
 
       <a href="html/profil.html" class="indexlink"><div class="row mt-3">
-        <div class="col-md-12 col-sm-12">
-          <h2>Lebenslauf</h2>
-
-          <tbody>
-            <tr>
-              <td>2018</td>
-              <td>OTH Regensburg Architektur</td>
-              <td>Abschluss Bachelor</td>
-              <td>Projekt Quecksilber</td>
-              </tr>
-              <tr>
-                <td>2020</td>
-                <td>keineahnung</td>
-                <td>lskdjflks</td>
-              </tr>
-          </tbody>
-  
-          <div class="row">
-            <div class="col-12">
-              <h4>OTH Regensburg, Studiengang Bachelor Architektur</h4>
-            </div>
-            <div class="col-12">
-              <h5 class="text-right"><span aria-hidden="true"></span>10/2018</h5>
-            </div>
-          </div>
-          <p>Hier begann Nikolas Luttner seinen Werdegang in der Architekturbranche.</p>
-          <div class="row">
-            <div class="col-12">
-              <h4>Praktikum bei MKS Architekten – Ingenieure GmbH</h4>
-            </div>
-            <div class="col-12">
-              <h5 class="text-right"><span aria-hidden="true"></span>08/2018</h5>
-            </div>
-          </div>
-          <p>Bereits über 20 Wochen arbeitete Nikolas Luttner über die Jahre bei bei diesem renommierten regionalen Büro.</p>
+        <div class="col-md-10 col-sm-9 col-8">
+          nilur steht für Nikolas Luttner Regensburg. Das Ideenprinzip basiert auf kontextualem aber nicht unbedingt rationalen 
+          <br><br>Hier steht etwas über meine Ideen, Grundlagen und Merkmale. Es ist eine Ansammlung an Projekten.    
+        </div>
+        <div class="col-md-2 col-sm-3 col-4 indeximg">
+          <img class="img-fluid" src="images/logo-skizze.png" alt="nilur Logo">
         </div>
       </div></a>
       
       <div class="hline"></div>
 
-          <div class="row">
-            <div class="col-9"><a href="html/kontakt.html" class="indexlink">
-              <p>Bei Anliegen können Sie sich gerne über das Kontaktformular oder per E-Mail an mich richten.<br>Um mehr von laufenden Projekten und meinen Hobbies zu erfahren, stehen meine Profile auf<br>Instagram und LinkedIn zur Verfügung.</p></a>
+      <div class="row">
+            <div class="col-xl-9 col-md-8 col-12"><a href="html/kontakt.html" class="indexlink">
+              <p>Bei Anliegen können Sie sich gerne über das Kontaktformular oder per E-Mail an mich richten. sdffffffffffffffffffffffffffffffffffffffffff
+                <br><br>Um mehr von laufenden Projekten und meinen Hobbies zu erfahren, stehen meine Profile auf<br>Instagram und LinkedIn zur Verfügung.</p></a>
            </div>
-           <div class="col-3 d-flex d-print-none">
-            <a href="https://linkedin.com" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="icons/linkedin.svg" class="btn-icon" alt="LinkedIn"></button></a>
-            <a href="https://instagram.com/nikoluttner" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="icons/instagram.svg" class="btn-icon" alt="Instagram"></button></a>
-            <a href="mailto:nikoluttner@gmail.com" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="icons/envelope.svg" class="btn-icon" alt="E-Mail"></button></a>            
+           <div class="col-xl-3 col-md-4 col-12 d-print-none mb-3">
+            <a href="https://www.linkedin.com/in/nikolas-luttner-789834234/" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="images/icons/linkedin.svg" class="btn-icon" alt="LinkedIn"></button></a>
+            <a href="https://instagram.com/nikoluttner" tabindex="-1" target="_blank"><button type="button" class="contact-btn"><img src="images/icons/instagram.svg" class="btn-icon" alt="Instagram"></button></a>
+            <a href="mailto:nikoluttner@gmail.com" tabindex="-1"><button type="button" class="contact-btn"><img src="images/icons/envelope.svg" class="btn-icon" alt="E-Mail"></button></a>            
            </div>
-         </div>
+      </div>
 
         </div>
 
 <footer class="py-3 d-print-none">
   <div class="nav justify-content-center pb-3">
     <h5 class="footh5"><a href="html/impressum.html" class="footh5 pe-6">Impressum</a> | <a href="html/datenschutz.html" class="footh5">Datenschutz</a></h5>
-      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace">  | </div><br class="d-block d-sm-none"></h5>
+      <h5 class="footh5"><div class="d-none d-sm-block d-flex flex-wrap whitespace"> | </div><br class="d-block d-sm-none"></h5>
       <h5 class="footh5"><a href="#menu" class="footh5">Seitenanfang</a> | <a href="en/index.html" class="footh5">English Version</a> | <a href="#" onclick="window.print();" class="footh5">Seite drucken</a></h5>
 
   </div>
